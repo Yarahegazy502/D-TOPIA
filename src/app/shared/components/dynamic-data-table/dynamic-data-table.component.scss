@@ -1,0 +1,92 @@
+:host::ng-deep{
+  .p-datatable-table {
+    font-family: 'DM Sans', sans-serif !important;
+    border-collapse: separate;
+    border-spacing: 0 15px !important;
+  }
+  .p-datatable .p-datatable-thead > tr > th {
+    background-color: transparent;
+    border: none;
+    color: var(--text-desc-color);
+  }
+  .p-datatable .p-datatable-tbody > tr > td{
+    border-color:  rgba(140, 149, 163, 0.21);
+    border-width: 1px 0 !important;
+    padding: 1rem;
+  }
+  .p-datatable .p-datatable-tbody > tr > td:first-child{
+    border-width: 1px 0px 1px  1px  !important;
+  }
+  .p-datatable .p-datatable-tbody > tr > td:last-child{
+    border-width: 1px 1px 1px  0px  !important;
+  }
+
+  tr td:first-child,tr td:first-child  {
+    border-top-left-radius: var(--border-radius-card);
+    border-bottom-left-radius: var(--border-radius-card);
+  }
+  tr td:last-child,tr td:last-child {
+    border-top-right-radius: var(--border-radius-card);
+    border-bottom-right-radius: var(--border-radius-card);
+ }
+
+.p-paginator,.p-datatable .p-datatable-header{
+  border: 0 !important;
+  background-color: transparent;
+}
+
+.p-checkbox .p-checkbox-box{
+  background: rgba(140, 149, 163, 0.33);
+border-radius: 5px;
+border: none;
+}
+.p-checkbox .p-checkbox-box.p-highlight{
+  background-color: var(--bg-main-color);
+}
+.p-inputtext{
+  background: rgba(255, 255, 255, 0.7);
+border: 1px solid rgba(140, 149, 163, 0.21);
+border-radius: var(--main-border-radius-shape);
+height: 2.8rem;
+}
+.add-provider{
+height: 2.8rem;
+}
+.p-input-icon-left > .p-inputtext {
+  padding-left: 3rem;
+}
+.p-datatable .p-datatable-header{
+  padding: 1rem 0 !important;
+}
+.status-instock{
+  background-color: #c8e6c9;
+  color: #29632d;
+}
+.status-lowstock{
+  background-color: #feedaf;
+  color: #925e48;
+}
+.status-outofstock{
+  background-color: #ffcdd2;
+  color: #cc4647;
+}
+.item-badge{
+  border-radius: 5px;
+    padding: 3px 8px;
+}
+
+
+.p-datatable .p-sortable-column.p-highlight:hover,
+.p-datatable .p-sortable-column:not(.p-highlight):hover{
+  background-color: transparent;
+  color: var(--text-desc-color) !important;
+}
+.p-datatable .p-sortable-column.p-highlight .p-sortable-column-icon,
+.p-datatable .p-sortable-column:not(.p-highlight):hover .p-sortable-column-icon{
+  color: var(--text-desc-color) !important;
+}
+}
+
+.not-found{
+  min-height: 30rem ;
+}

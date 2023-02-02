@@ -1,0 +1,131 @@
+<ng-container *ngIf="type=='listItem'">
+  <div class="custom-skeleton">
+    <ul class="m-0 o-0 p-0">
+        <ng-container *ngFor="let item of skeletonItems2;let i = index">
+          <li [class.mb-3]="skeletonItems2?.length-1">
+            <div class="d-flex align-items-center gap-3">
+                <p-skeleton shape="circle" size="4rem" styleClass="mr-2"></p-skeleton>
+                <div style="flex: 1">
+                    <p-skeleton width="100%" styleClass="mb-2"></p-skeleton>
+                    <p-skeleton width="75%"></p-skeleton>
+                </div>
+            </div>
+        </li>
+        </ng-container>
+
+    </ul>
+  </div>
+
+</ng-container>
+
+<ng-container *ngIf="type=='services'">
+  <div class="custom-skeleton">
+    <ul class="m-0 o-0 p-0">
+        <ng-container *ngFor="let item of skeletonItems;let i = index">
+          <div class="global-card p-4" [class.mb-3]="skeletonItems?.length-1">
+            <li class="">
+              <div class="d-flex align-items-center gap-3">
+                <div style="flex: 1">
+                  <p-skeleton width="100%" styleClass="mb-2"></p-skeleton>
+                  <p-skeleton width="75%"></p-skeleton>
+              </div>
+                  <div style="flex: 1">
+                    <div class="d-flex justify-content-end gap-3">
+                      <p-skeleton width="4rem" height="2rem"></p-skeleton>
+                      <p-skeleton width="3rem" height="2rem"></p-skeleton>
+                    </div>
+
+                  </div>
+              </div>
+          </li>
+          </div>
+        </ng-container>
+
+    </ul>
+  </div>
+
+</ng-container>
+
+<ng-container *ngIf="type=='table'">
+  <p-table [value]="[9,9,7,5,9,7]" [tableStyle]="{'min-width': '50rem'}">
+    <ng-template pTemplate="caption">
+      <div style="flex: 1">
+        <div class="d-flex justify-content-between gap-3">
+          <p-skeleton width="12rem" height="1.3rem" borderRadius="10px"></p-skeleton>
+          <p-skeleton width="20rem" height="1.3rem" borderRadius="10px"></p-skeleton>
+        </div>
+
+      </div>
+    </ng-template>
+    <ng-template pTemplate="header">
+        <tr>
+            <ng-container *ngFor="let item of [9,9,7,5]">
+              <th><p-skeleton width="50%" height="1.3rem" borderRadius="10px"></p-skeleton></th>
+            </ng-container>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+        <tr>
+          <ng-container *ngFor="let item of [9,9,7,5]">
+            <td class="p-4"><p-skeleton width="50%" height="1.3rem" borderRadius="10px"></p-skeleton></td>
+          </ng-container>
+        </tr>
+    </ng-template>
+</p-table>
+  <!-- <p-table #dt [globalFilterFields]="[
+  'name',
+  'country.name',
+  'representative.name',
+  'status'
+  ]"  responsiveLayout="scroll" [rowHover]="false" [resizableColumns]="true"  dataKey="id">
+  <ng-template pTemplate="caption">
+    <div class="d-flex justify-content-between align-items-center flex-wrap">
+      <h3 class="p-m-0 fs-3 fw-bold">kk</h3>
+      <div class="d-flex flex-wrap gap-2">
+
+          <span class="p-input-icon-left">
+            <i class="pi pi-search ps-2"></i>
+            <input pInputText type="text" />
+          </span>
+
+          <button class="btn btn-solid-main add-provider py-0" >
+            Add provider
+          </button>
+
+      </div>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="header" let-columns>
+    <tr>
+        <th style="width: 5rem">
+
+          <span class="text-dark-color">All</span>
+        </th>
+
+        <th></th>
+
+        <th pSortableColumn="rating">
+          Reviews <p-sortIcon field="rating"></p-sortIcon>
+        </th>
+
+        <th pSortableColumn="inventoryStatus">
+          Status <p-sortIcon field="inventoryStatus"></p-sortIcon>
+        </th>
+
+        <th>
+            <span>Actions</span>
+        </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-columns>
+    <tr>
+     <td>kk</td>
+     <td>jj</td>
+     <td>lkm</td>
+     <td>jj</td>
+     <td>kn</td>
+
+    </tr>
+  </ng-template>
+</p-table> -->
+</ng-container>

@@ -1,0 +1,10 @@
+.statistic-card {
+  border-radius: var(--border-radius-card);
+  padding: 0.5rem .75rem;
+  .statistic-img{
+    min-width: 2rem;
+    height: 2rem;
+    border-radius: 9px;
+  }
+}
+

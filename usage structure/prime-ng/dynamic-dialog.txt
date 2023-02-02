@@ -1,0 +1,41 @@
+- in component
+
+@Component({
+  providers: [DialogService]
+})
+
+constructor(private dialogService: DialogService)
+
+ show():void {
+    const ref = this.dialogService.open(TestModalComponent, {
+        data: {
+            id: '51gF3'
+        },
+        header: 'dialog',
+        width: '70%',
+        dismissableMask:true,
+        maximizable:true,
+    });
+
+    ref.onClose.subscribe((res:any) => {
+        if (res) {
+            console.log(res);
+        }
+    });
+}
+
+
+- in modal component
+
+constructor(
+    public config: DynamicDialogConfig,
+    public ref: DynamicDialogRef,
+    ) { }
+
+ selectProduct(item: any) {
+    this.ref.close(item);
+}
+
+- for more Properties and events
+
+link : https://primeng.org/dynamicdialog

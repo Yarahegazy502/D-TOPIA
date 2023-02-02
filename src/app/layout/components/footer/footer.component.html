@@ -1,0 +1,62 @@
+<!-- ---------------------site--------------------------- -->
+<ng-container *ngIf="false">
+  <footer class="bg-white-color shadow">
+    <div class="text-dark-color text-center footer p-3" [ngClass]="getDashClass()">
+      <p class="mb-0">footer</p>
+    </div>
+  </footer>
+</ng-container>
+
+<!-- ----------------------dashboard--------------------------- -->
+<ng-container *ngIf="false">
+  <footer class="bg-white-color shadow">
+    <div class="text-dark-color text-center footer p-3" [class.dash]="!toggleSideMenu" [ngClass]="getDashClass()">
+      <p class="mb-0">footer</p>
+    </div>
+  </footer>
+</ng-container>
+
+<!-- ---------------------site & dashboard ------------------ -->
+<!-- <ng-container *ngIf="true">
+  <footer class="bg-white-color shadow">
+    <div class="text-dark-color text-center footer p-3" [class.dash]="moduleType=='dashboard' && !toggleSideMenu" [ngClass]="getDashClass()">
+      <p class="mb-0">footer</p>
+    </div>
+  </footer>
+</ng-container> -->
+
+<footer class="footer main-bg py-3 dash" [ngClass]="getDashClass()">
+  <div class="container">
+    <p class="text-center">
+      <span class="get-connected">Get connected with us: </span>
+      <i class="fa fa-facebook text-white fs-5 mx-2"></i>
+    </p>
+
+    <hr>
+
+    <div class="d-flex flex-wrap justify-content-between">
+      <div class="d-flex flex-wrap gap-3 align-items-center">
+        <div class="d-flex gap-2">
+          <div class="logo">
+            <div class="dtopia_logo_footer">
+              <img src="assets/images/D-Topia-3.svg" width="30px" height="30px" class="d-inline-block align-top" alt="">
+              <svg version="1.1" class="trisvg" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" preserveAspectRatio="none" width="14px"
+                height="5px" viewBox="0 0 14.017 5.006" enable-background="new 0 0 14.017 5.006" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.016,0L7.008,5.006L0,0H14.016z"></path>
+              </svg>
+            </div>
+            <!-- <span class="brand-title">D-<span class="brand-letter">T</span>OPIA</span> -->
+            <span class="text-white footer-logo">D-TOPIA</span>
+
+          </div>
+        </div>
+        <p class="m-0">© 2022 All rights reserved.</p>
+      </div>
+      <div>
+        <p><span class="foot-content"> Designed By</span> : <span class="text-white mx-1">HashDotSoft</span></p>
+        <p><span class="foot-content"> For Help</span> : <span class="text-white mx-1">Info@Dtopia-eg.com</span></p>
+      </div>
+    </div>
+  </div>
+</footer>

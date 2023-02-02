@@ -1,0 +1,43 @@
+<section id="statistics">
+  <ng-container *ngIf="statistics?.length>0">
+    <ng-container *ngIf="statistics?.length<=6; else slider">
+      <div class="row">
+        <ng-container *ngFor="let item of statistics">
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-3">
+            <div class="statistic-card h-100 {{item?.bgColor}} p-3">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <div class="statistic-img bg-white-color d-flex justify-content-center align-items-center">
+                  <img [src]="item?.image" alt="statistic">
+                </div>
+                <p class="mb-0 fw-bold fs-8">{{item?.text}}</p>
+              </div>
+              <strong class="fs-4 pt-2">{{item?.count}}</strong>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </ng-container>
+    <ng-template #slider>
+      <div class="carousel py-4">
+        <p-carousel [value]="statistics" styleClass="custom-carousel" [numVisible]="6" [numScroll]="1"
+          [circular]="true" [showIndicators]="false" [autoplayInterval]="7000" [responsiveOptions]="responsiveOptions">
+
+          <ng-template let-card pTemplate="item">
+            <div class="card-item mx-2">
+              <div class="statistic-card h-100 {{card?.bgColor}} p-3">
+                <div class="d-flex align-items-center gap-2 mb-3">
+                  <div class="statistic-img bg-white-color d-flex justify-content-center align-items-center">
+                    <img [src]="card?.image" alt="statistic">
+                  </div>
+                  <p class="mb-0 fw-bold fs-8">{{card?.text}}</p>
+                </div>
+                <strong class="fs-4 pt-2">{{card?.count}}</strong>
+              </div>
+            </div>
+          </ng-template>
+        </p-carousel>
+      </div>
+    </ng-template>
+    </ng-container>
+</section>
+

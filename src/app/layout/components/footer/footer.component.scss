@@ -1,0 +1,129 @@
+.footer {
+  transition: all 0.5s ease !important;
+}
+.main-bg {
+  background: #2f2f2f !important;
+}
+.footer {
+  color: #8b8c8d;
+  font-weight: 300;
+}
+.foot-content {
+  font-weight: 200;
+  font-size: 15px;
+}
+
+hr {
+  border-width: 5px;
+}
+
+.dtopia_logo_header {
+  /* background: #2f2f2f !important; */
+  background: #d5d5d5 !important;
+  margin-left: 0px;
+  margin-right: 10px;
+  float: left !important;
+
+  text-decoration: none;
+  clear: right;
+  float: right;
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  padding: 8px 10px 7px;
+  border-radius: 2px;
+  margin-left: 0px;
+}
+.dtopia_logo_header:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+.dtopia_logo_header strong {
+  font-size: 17px;
+  font-weight: 900;
+  display: block;
+  line-height: 24px;
+}
+.dtopia_logo_header .trisvg {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 5px;
+}
+.dtopia_logo_header .trisvg path {
+  /* fill: #2f2f2f !important; */
+  fill: #d5d5d5 !important;
+}
+/* ******************************** */
+.dtopia_logo_footer,
+.dtopia_logo,
+.free-quote {
+  text-decoration: none;
+  clear: right;
+  float: right;
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  padding: 8px 10px 7px;
+  border-radius: 2px;
+  margin-left: 20px;
+  /* background: #cd2122; */
+  background: rgba(153, 196, 64, 1) !important;
+}
+.dtopia_logo {
+  background: rgba(72, 72, 72, 1) !important;
+  background: rgba(153, 196, 64, 1) !important;
+  margin-left: 0px;
+}
+.dtopia_logo_footer {
+  background: rgba(72, 72, 72, 1) !important;
+  margin-left: 0px;
+  margin-right: 10px;
+  float: left !important;
+}
+.dtopia_logo_footer:hover,
+.dtopia_logo:hover,
+.free-quote:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+.dtopia_logo_footer strong,
+.dtopia_logo strong,
+.free-quote strong {
+  font-size: 17px;
+  font-weight: 900;
+  display: block;
+  line-height: 24px;
+}
+.dtopia_logo_footer .trisvg,
+.dtopia_logo .trisvg,
+.free-quote .trisvg {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 5px;
+}
+.dtopia_logo_footer .trisvg path {
+  fill: rgba(72, 72, 72, 1) !important;
+}
+.dtopia_logo .trisvg path {
+  fill: rgba(72, 72, 72, 1) !important;
+  fill: rgba(153, 196, 64, 1) !important;
+}
+.free-quote .trisvg path {
+  /* fill: #cd2122; */
+  fill: rgba(153, 196, 64, 1) !important;
+}
+
+.footer-logo {
+  font-size: 30px;
+  font-weight: 500;
+  color: #d5d5d5 !important;
+  display: flex;
+}
